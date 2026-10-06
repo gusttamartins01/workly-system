@@ -1,6 +1,16 @@
-export default function App() {
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Navbar from './components/layouts/Navbar';
+import Home from './pages/home/Home';
 
-    return (
-        <h1 className="bg-red-700">Olá, Mudno!</h1>
-    )
+export default function App() {
+	return (
+		<BrowserRouter>
+			<Navbar />
+			<main>
+				<Routes>
+					<Route path="/"  element={ < Home />} />
+				</Routes>
+			</main>
+		</BrowserRouter>
+	);
 }
