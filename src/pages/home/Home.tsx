@@ -1,10 +1,13 @@
+import { useNavigate } from 'react-router-dom';
 import ImgHome from '../../assets/logo.png'
 
 export default function Home() {
+    const navigate = useNavigate();
+
 	return (
 		<section className="relative min-h-screen bg-black text-white">
-			<div className="mx-auto grid min-h-screen max-w-7xl grid-cols-1 items-center gap-10 px-8 md:grid-cols-2">
-				<div className="flex w-full flex-col justify-center text-left">
+			<div className=" p-12 mx-auto grid min-h-screen max-w-7xl grid-cols-1 items-center  px-8 md:grid-cols-2">
+				<div className="flex w-full flex-col justify-center text-left order-last md:order-first">
 					<span className="mb-4 text-md font-semibold uppercase tracking-widest text-red-600 animate-pulse">
 						Gestão inteligente para empresas
 					</span>
@@ -23,6 +26,7 @@ export default function Home() {
 					<div className="mt-8 flex gap-4">
 						<button
 							type="button"
+                            onClick={() => navigate("/workly")}
 							className="rounded-lg bg-red-600 px-6 py-3 font-semibold text-white transition hover:bg-red-700"
 						>
 							Começar agora
@@ -30,6 +34,7 @@ export default function Home() {
 
 						<button
 							type="button"
+                            onClick={() => navigate("/about")}
 							className="rounded-lg border border-gray-700 px-6 py-3 font-semibold text-white transition hover:border-red-600 hover:text-red-600"
 						>
 							Conhecer o Workly
@@ -37,8 +42,8 @@ export default function Home() {
 					</div>
 				</div>
 
-				<div className="flex items-center justify-center">
-					<div className="flex h-96 w-full max-w-lg items-center justify-center">
+				<div className="flex items-center justify-center order-first md:order-last">
+					<div className="flex max-w-lg items-center justify-center">
                         <img
                             src={ImgHome}
                             alt="Imagem refrencia da plataforma na sessão principal."
