@@ -35,7 +35,7 @@ export default function Navbar() {
 			<div className="mx-auto max-w-7xl px-4">
 				<div className="flex h-16 items-center justify-between">
 					<NavLink
-						to="/home"
+						to="/"
 						onClick={closeMenus}
 						className="flex cursor-pointer items-center transition duration-500 ease-in-out hover:scale-110"
 					>
@@ -49,7 +49,7 @@ export default function Navbar() {
 					</NavLink>
 
 					<nav className="hidden items-center gap-6 text-lg font-medium lg:flex">
-						<NavLink to="/home" className={getLinksStyle}>
+						<NavLink to="/" className={getLinksStyle}>
 							Início
 						</NavLink>
 
