@@ -36,7 +36,10 @@ export default function Navbar() {
 				<div className="flex h-16 items-center justify-between">
 					<NavLink
 						to="/"
-						onClick={closeMenus}
+						onClick={() => {
+							closeMenus();
+							window.scrollTo({ top: 0, behavior: 'smooth'});
+						}}
 						className="flex cursor-pointer items-center transition duration-500 ease-in-out hover:scale-110"
 					>
 						<img
@@ -49,7 +52,14 @@ export default function Navbar() {
 					</NavLink>
 
 					<nav className="hidden items-center gap-6 text-lg font-medium lg:flex">
-						<NavLink to="/" className={getLinksStyle}>
+						<NavLink
+							to="/"
+							onClick={() => {
+								closeMenus();
+								window.scrollTo({ top: 0, behavior: 'smooth' });
+							}}
+							className={getLinksStyle}
+						>
 							Início
 						</NavLink>
 
@@ -88,7 +98,17 @@ export default function Navbar() {
 							Workly AI
 						</NavLink>
 
-						<NavLink to="/about" className={getLinksStyle}>
+						<NavLink
+							to="/"
+							onClick={(e) => {
+								e.preventDefault();
+								document.getElementById('about')?.scrollIntoView({
+									behavior: 'smooth',
+									block: 'start',
+								});
+							}}
+							className={getLinksStyle}
+						>
 							Sobre
 						</NavLink>
 
@@ -118,7 +138,7 @@ export default function Navbar() {
 				{mobileMenuOpen && (
 					<nav className="border-t border-white/10 bg-black pb-4 pt-3 lg:hidden">
 						<div className="flex flex-col gap-2 px-4 text-base font-medium">
-							<NavLink to="/home" onClick={closeMenus} className={getLinksStyle}>
+							<NavLink to="/" onClick={closeMenus} className={getLinksStyle}>
 								Início
 							</NavLink>
 
@@ -153,19 +173,35 @@ export default function Navbar() {
 								)}
 							</div>
 
-							<NavLink to="/workly" onClick={closeMenus} className={SectionIaStyle}>
+							<NavLink
+								to="/workly"
+								onClick={closeMenus}
+								className={SectionIaStyle}
+							>
 								Workly AI
 							</NavLink>
 
-							<NavLink to="/about" onClick={closeMenus} className={getLinksStyle}>
+							<NavLink
+								to="/about"
+								onClick={closeMenus}
+								className={getLinksStyle}
+							>
 								Sobre
 							</NavLink>
 
-							<NavLink to="/contact" onClick={closeMenus} className={getLinksStyle}>
+							<NavLink
+								to="/contact"
+								onClick={closeMenus}
+								className={getLinksStyle}
+							>
 								Contato
 							</NavLink>
 
-							<NavLink to="/profile" onClick={closeMenus} className="flex items-center gap-2 py-2 text-white">
+							<NavLink
+								to="/profile"
+								onClick={closeMenus}
+								className="flex items-center gap-2 py-2 text-white"
+							>
 								<User size={22} className="text-gray-200" />
 								Perfil
 							</NavLink>
