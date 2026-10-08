@@ -112,7 +112,16 @@ export default function Navbar() {
 							Sobre
 						</NavLink>
 
-						<NavLink to="/contact" className={getLinksStyle}>
+						<NavLink
+							to="/contact"
+							onClick={(e) => {
+								e.preventDefault();
+								document.getElementById('contact')?.scrollIntoView({
+									behavior: 'smooth',
+									block: 'start'
+								});
+							}}
+							className={getLinksStyle}>
 							Contato
 						</NavLink>
 
