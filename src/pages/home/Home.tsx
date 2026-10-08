@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import ImgHome from '../../assets/homeImg.png';
 import About from '../../components/home/about/About';
+import Contact from '../../components/home/contact/Contact';
 
 export default function Home() {
 	const navigate = useNavigate();
@@ -64,6 +65,7 @@ export default function Home() {
 			</section>
 
 			<About />
+			<Contact />
 		</>
 	);
 }
