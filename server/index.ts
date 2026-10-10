@@ -93,7 +93,7 @@ const server = createServer(async (request, response) => {
 			return;
 		}
 
-		console.error('Falha ao processar uma mensagem da Workly AI:', error);
+		console.error('Falha ao processar uma mensagem do wiky AI:', error);
 		sendJson(response, 502, {
 			error: 'Não foi possível processar a mensagem. Tente novamente.',
 		});
