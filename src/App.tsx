@@ -17,13 +17,6 @@ export default function App() {
 					<Route path="/about" element={<About />} />
 					<Route path="/contact" element={<Contact />} />
 					<Route path="/solutions" element={<Solutions />} />
-				</Routes>
-
-				<Routes>
-					
-				</Routes>
-
-				<Routes>
 					<Route path="/workly" element={<WorklyAi />} />
 				</Routes>
 			</main>

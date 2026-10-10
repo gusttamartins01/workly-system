@@ -28,7 +28,7 @@ export default function WorklyAi() {
 	} = useWorklyAiChat();
 
 	return (
-		<section className="min-h-[calc(100vh-4rem)] border-b border-white/10 bg-black px-4 pb-10 pt-24 text-white sm:px-6">
+		<section id='workly' className="min-h-[calc(100vh-4rem)] border-b border-white/10 bg-black px-4 pb-10 pt-24 text-white sm:px-6">
 			<div className="mx-auto max-w-7xl">
 				<div className="mb-7">
 					<p className="mb-2 flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.2em] text-red-500">
