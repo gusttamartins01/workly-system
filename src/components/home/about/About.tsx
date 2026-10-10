@@ -9,7 +9,7 @@ export default function About() {
 				</h2>
 			</div>
 
-			<div className="text-gray-200 mx-4 pl-3 md:pl-0 md:mx-16 mt-6 grid grid-cols-1 md:grid-cols-2 items-center gap-10 ">
+			<div className="text-gray-200 mx-4 pl-3 md:pl-0 md:mx-16 mt-6 grid grid-cols-1 md:grid-cols-2 items-center gap-10">
 				<div className="w-full flex gap-5 flex-col justify-center">
 					<p className="text-2xl font-normal">
 						O Workly nasceu para simplificar a rotina das empresas, reunindo em

@@ -11,7 +11,7 @@ import logoFooter from '../../assets/logo.png';
 
 export default function Footer() {
     return (
-        <footer className="bg-black pt-5 pb-10 px-2 md:px-5 text-white">
+        <footer className="bg-black pt-5 pb-6 px-2 md:px-5 text-white">
             <div className="absolute inset-x-0 top-0 h- bg-linear-to-b from-black/30 to-transparent pointer-events-none" />
 
             <div className="mx-auto grid grid-cols-1 md:grid-cols-3">
@@ -81,28 +81,37 @@ export default function Footer() {
                         </h3>
 
                         <Link
-                            to=""
+                            to="/"
+                            onClick={() => {
+                                window.scrollTo({ top: 0, behavior: 'smooth'})
+                            }}
                             className="text-sm hover:text-red-500"
                         >
                             Início
                         </Link>
 
                         <Link
-                            to=""
+                            to="/about"
+                            onClick={() => {
+                                window.scrollTo({ top: 0, behavior: 'smooth'})
+                            }}
                             className="text-sm md:whitespace-nowrap hover:text-red-500"
                         >
                             Sobre nós
                         </Link>
 
                         <Link
-                            to=""
+                            to="/solutions"
+                            onClick={() => {
+                                window.scrollTo({ top: 0, behavior: 'smooth'})
+                            }}
                             className="text-sm hover:text-red-500"
                         >
                             Serviços
                         </Link>
 
                         <Link
-                            to=""
+                            to="/profile"
                             className="text-sm hover:text-red-500"
                         >
                             Perfil
@@ -116,28 +125,40 @@ export default function Footer() {
                         </h3>
 
                         <Link
-                            to=""
+                            to="/solutions/rh"
+                            onClick={() => {
+                                window.scrollTo({ top: 0, behavior: 'smooth'})
+                            }}
                             className="text-sm hover:text-red-500"
                         >
                             RH
                         </Link>
 
                         <Link
-                            to=""
+                            to="/solutions/dp"
+                            onClick={() => {
+                                window.scrollTo({ top: 0, behavior: 'smooth'})
+                            }}
                             className="text-sm hover:text-red-500"
                         >
                             DP
                         </Link>
 
                         <Link
-                            to=""
+                            to="/solutions/sst"
+                            onClick={() => {
+                                window.scrollTo({ top: 0, behavior: 'smooth'})
+                            }}
                             className="text-sm hover:text-red-500"
                         >
                             SST
                         </Link>
 
                         <Link
-                            to=""
+                            to="/solutions/legislation"
+                            onClick={() => {
+                                window.scrollTo({ top: 0, behavior: 'smooth'})
+                            }}
                             className="text-sm hover:text-red-500"
                         >
                             Legislação
