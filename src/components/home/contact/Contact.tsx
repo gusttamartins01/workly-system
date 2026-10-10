@@ -20,7 +20,7 @@ export default function Contact() {
 			<div className="text-gray-200 text-lg font-bold mx-auto md:mx-16 px-4 md:pl-0 mt-10 md:mt-6 grid grid-cols-1 md:grid-cols-2 items-center gap-10">
 				<div className="flex flex-col justify-center items-start text-left order-last md:order-first md:h-full md:w-full">
 
-					<div className="flex bg-amber-800 justify-center items-center text-center flex-row md:flex-col gap-5 px-16 md:px-8 py-5 rounded-2xl md:h-full md:w-full md:justify-around md:bg-transparent">
+					<div className="flex justify-center items-center text-center flex-row md:flex-col gap-5 px-16 md:px-8 py-5 rounded-2xl md:h-full md:w-full md:justify-around md:bg-transparent">
 						
                         <div className="flex justify-center items-center text-center gap-5 md:grid md:grid-cols-[35px_1fr] md:gap-5 md:rounded-xl md:border md:border-white/10 md:px-20 md:py-5 cursor-pointer transition duration-300 ease-in-out hover:scale-110">
 							<FaWhatsapp
