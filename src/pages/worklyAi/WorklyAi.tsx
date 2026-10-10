@@ -33,10 +33,10 @@ export default function WorklyAi() {
 				<div className="mb-7">
 					<p className="mb-2 flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.2em] text-red-500">
 						<Sparkles size={16} aria-hidden="true" />
-						Workly AI
+						Wiky AI
 					</p>
 					<h1 className="text-3xl font-bold tracking-tight sm:text-4xl">
-						Seu espaço para conversar com a Workly
+						Seu espaço para conversar com o Wiky
 					</h1>
 					<p className="mt-2 max-w-2xl text-sm leading-6 text-zinc-400 sm:text-base">
 						Tire dúvidas e encontre orientação prática para o dia a dia do
@@ -69,7 +69,7 @@ export default function WorklyAi() {
 							role="log"
 							className="flex-1 space-y-6 overflow-y-auto px-4 py-6 sm:px-7"
 							aria-live="polite"
-							aria-label="Conversa com Workly AI"
+							aria-label="Conversa com Wiky AI"
 						>
 							{messages.map((message) => (
 								<div
@@ -134,7 +134,7 @@ export default function WorklyAi() {
 											className="animate-spin"
 											aria-hidden="true"
 										/>
-										A Workly AI está pensando...
+										A Wiky AI está pensando...
 									</span>
 								</div>
 							)}
@@ -158,11 +158,11 @@ export default function WorklyAi() {
 							className="border-t border-white/10 bg-black/40 p-4 sm:px-6 sm:py-5"
 						>
 							<div className="flex items-end gap-3 rounded-2xl border border-white/10 bg-zinc-900 p-2 transition focus-within:border-red-500/50">
-								<label htmlFor="workly-ai-message" className="sr-only">
+								<label htmlFor="wiky-ai-message" className="sr-only">
 									Sua mensagem
 								</label>
 								<textarea
-									id="workly-ai-message"
+									id="wiky-ai-message"
 									value={draft}
 									onChange={(event) => setDraft(event.target.value)}
 									onKeyDown={(event) => {
@@ -189,7 +189,7 @@ export default function WorklyAi() {
 							<div className="mt-3 flex items-center justify-center gap-2 text-center text-[11px] text-zinc-500">
 								<BriefcaseBusiness size={13} aria-hidden="true" />
 								<span>
-									A Workly AI pode cometer erros. Revise informações importantes
+									O Wiky AI pode cometer erros. Revise informações importantes
 									antes de agir.
 								</span>
 							</div>
