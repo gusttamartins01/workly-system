@@ -5,6 +5,7 @@ import Solutions from './components/home/solutions/Solutions';
 import Footer from './components/layouts/Footer';
 import Navbar from './components/layouts/Navbar';
 import Home from './pages/home/Home';
+import WorklyAi from './pages/worklyAi/WorklyAi';
 
 export default function App() {
 	return (
@@ -16,6 +17,14 @@ export default function App() {
 					<Route path="/about" element={<About />} />
 					<Route path="/contact" element={<Contact />} />
 					<Route path="/solutions" element={<Solutions />} />
+				</Routes>
+
+				<Routes>
+					
+				</Routes>
+
+				<Routes>
+					<Route path="/workly" element={<WorklyAi />} />
 				</Routes>
 			</main>
 			<Footer />
