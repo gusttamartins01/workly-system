@@ -7,6 +7,7 @@ import {
 	User,
 } from 'lucide-react';
 import Wiky from '../../assets/wikyAnimation.gif';
+import WikyWiky from '../../assets/wikyWiky.png';
 import AssistantMessage from '../../components/ui/AssistantMessage';
 import { useWorklyAiChat } from '../../hooks/useWorklyAiChat';
 
@@ -81,13 +82,15 @@ export default function WorklyAi() {
 									<div
 										className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-xl ${
 											message.role === 'assistant'
-												? 'bg-red-600/15 text-red-500'
-												: 'bg-zinc-800 text-zinc-200'
+												
 										}`}
 										aria-hidden="true"
 									>
 										{message.role === 'assistant' ? (
-											<Bot size={19} />
+											<img
+												src={WikyWiky}
+												alt='Wiky'
+											/>
 										) : (
 											<User size={19} />
 										)}
