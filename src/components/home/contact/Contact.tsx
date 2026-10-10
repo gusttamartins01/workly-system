@@ -9,7 +9,7 @@ export default function Contact() {
 	return (
 		<section
 			id="contact"
-			className="h-auto w-full pt-10 pb-20 md:pb-28 bg-black border-b border-white/10 backdrop-blur-md"
+			className="h-auto max-w-full pt-10 pb-20 md:pb-28 bg-black border-b border-white/10 backdrop-blur-md"
 		>
 			<div className="mx-5 sm:mx-10 mt-3 md:mt-5 flex items-center md:justify-start">
 				<h2 className="text-red-600 text-3xl md:text-4xl font-bold border-l-4 border-red-600 rounded-t-2xl pt-3 pb-1 pl-4 md:pl-5">
@@ -20,9 +20,9 @@ export default function Contact() {
 			<div className="text-gray-200 text-lg font-bold mx-auto md:mx-16 px-4 md:pl-0 mt-10 md:mt-6 grid grid-cols-1 md:grid-cols-2 items-center gap-10">
 				<div className="flex flex-col justify-center items-start text-left order-last md:order-first md:h-full md:w-full">
 
-					<div className="flex justify-center items-start flex-row md:flex-col gap-5 px-20 md:px-8 py-5 rounded-2xl md:h-full md:w-full md:justify-evenly md:bg-transparent">
+					<div className="flex mx-auto justify-center items-center text-center flex-row md:flex-col gap-5 px-20 md:px-8 py-5 rounded-2xl md:h-full md:w-full md:justify-around md:bg-transparent">
 						
-                        <div className="flex justify-center items-center gap-5 md:grid md:grid-cols-[35px_1fr] md:gap-5 md:rounded-xl md:border md:border-white/10 md:px-20 md:py-5 cursor-pointer transition duration-300 ease-in-out hover:scale-110">
+                        <div className="flex justify-center items-center text-center gap-5 md:grid md:grid-cols-[35px_1fr] md:gap-5 md:rounded-xl md:border md:border-white/10 md:px-20 md:py-5 cursor-pointer transition duration-300 ease-in-out hover:scale-110">
 							<FaWhatsapp
 								size={35}
 								className="shrink-0 text-green-500 duration-500 hover:text-white"
@@ -32,7 +32,7 @@ export default function Contact() {
 							</span>
 						</div>
 
-						<div className="flex items-center gap-4 md:grid md:grid-cols-[35px_1fr] md:gap-5 md:rounded-xl md:border md:border-white/10 md:px-20 md:py-5 cursor-pointer transition duration-300 ease-in-out hover:scale-110">
+						<div className="flex bg-items-center gap-4 md:grid md:grid-cols-[35px_1fr] md:gap-5 md:rounded-xl md:border md:border-white/10 md:px-21 md:py-5 cursor-pointer transition duration-300 ease-in-out hover:scale-110">
 							<FaInstagram
 								size={35}
 								className="shrink-0 text-red-500 duration-500 hover:text-white"
@@ -42,7 +42,7 @@ export default function Contact() {
 							</span>
 						</div>
 
-						<div className="flex items-center gap-4 md:grid md:grid-cols-[35px_1fr] md:gap-5 md:rounded-xl md:border md:border-white/10 md:px-20 md:py-5 cursor-pointer transition duration-300 ease-in-out hover:scale-110">
+						<div className="flex items-center gap-4 md:grid md:grid-cols-[35px_1fr] md:gap-5 md:rounded-xl md:border md:border-white/10 md:px-23 md:py-5 cursor-pointer transition duration-300 ease-in-out hover:scale-110">
 							<FaLinkedin
 								size={35}
 								className="shrink-0 text-blue-500 duration-500 hover:text-white"
@@ -52,7 +52,7 @@ export default function Contact() {
 							</span>
 						</div>
 
-						<div className="flex items-center gap-4 md:grid md:grid-cols-[35px_1fr] md:gap-5 md:rounded-xl md:border md:border-white/10 md:px-20 md:py-5 cursor-pointer transition duration-300 ease-in-out hover:scale-110">
+						<div className="flex items-center gap-4 md:grid md:grid-cols-[35px_1fr] md:gap-5 md:rounded-xl md:border md:border-white/10 md:px-25 md:py-5 cursor-pointer transition duration-300 ease-in-out hover:scale-110">
 							<FaEnvelopeOpenText
 								size={35}
 								className="shrink-0 text-purple-500 duration-500 hover:text-white"
