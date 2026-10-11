@@ -93,7 +93,7 @@ const markdownComponents: Components = {
 
 export default function AssistantMessage({ content }: { content: string }) {
 	return (
-		<div className="max-w-[85%] min-w-0 break-words rounded-2xl rounded-tl-md border border-white/8 bg-zinc-900 px-4 py-3 text-sm leading-7 text-zinc-200 sm:max-w-[80%] sm:px-5 sm:py-4">
+		<div className="max-w-[85%] min-w-0 wrap-break-word rounded-2xl rounded-tl-md border border-white/8 bg-zinc-900 px-4 py-3 text-sm leading-7 text-zinc-200 sm:max-w-[80%] sm:px-5 sm:py-4">
 			<ReactMarkdown
 				components={markdownComponents}
 				remarkPlugins={[remarkGfm]}
